@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+  background: rgb(1, 9, 27);
+}
+
+.hidden-scroll::-webkit-scrollbar {
+  width: 0px;
+}
+
+.value_border {
+  border: 1px solid lightblue;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.primary {
+  background: #449f24;
+}
+
+body {
+  overflow-x: hidden !important;
+}
