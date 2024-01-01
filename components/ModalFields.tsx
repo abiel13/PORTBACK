@@ -11,7 +11,7 @@ interface ModalFieldsI {
 
 const ModalFields: FC<ModalFieldsI> = ({ name, type, value, row }) => {
   return (
-    <Grid item xs={11} md={row! | 5}>
+    <Grid sx={{ height:'fit-content'}} item xs={11} md={row! | 5}>
       <Stack spacing={2}>
         <Typography>{name}</Typography>
         <input

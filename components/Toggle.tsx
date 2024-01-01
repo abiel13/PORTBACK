@@ -9,7 +9,15 @@ interface ToggleI {
 
 const Toggle: FC<ToggleI> = ({ name }) => {
   const [isModal, setIsModal] = useState<boolean>(false);
-  return <>{!isModal ? <Modal name={name} /> : <View name={name} />}</>;
+  return (
+    <>
+      {isModal ? (
+        <Modal name={name} toggle={() => setIsModal(false)} />
+      ) : (
+        <View name={name} toggle={() => setIsModal(true)} />
+      )}
+    </>
+  );
 };
 
 export default Toggle;

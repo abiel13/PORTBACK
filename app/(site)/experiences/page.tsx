@@ -1,9 +1,12 @@
-import React from 'react'
+import Toggle from "@/components/Toggle";
+import React from "react";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div className="min-h-[90vh] w-full flex items-center justify-center">
+      <Toggle name="Work Experience" />
+    </div>
+  );
+};
 
-export default page
+export default page;
