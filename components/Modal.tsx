@@ -1,5 +1,6 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 import React, { FC } from "react";
+import ModalFields from "./ModalFields";
 
 interface ModalI {
   name: string;
@@ -15,9 +16,14 @@ const Modal: FC<ModalI> = ({ name }) => {
       </Typography>
       <Grid
         container
-        sx={{ flex: 1, border: "1px solid #999", borderRadius: "5px" }}
+        sx={{
+          flex: 1,
+          border: "1px solid #999",
+          borderRadius: "5px",
+          padding: "1rem",
+        }}
       >
-        {name == "skills" ? <div></div> : <div></div>}
+        <ModalFields name="company name / organisation" type="text" />
       </Grid>
       <div className="mt-4 self-end flex gap-6">
         <button className="bg-[#1E1E1E99]  px-4 py-2 rounded-lg font-bold tracking-wider font-sans">

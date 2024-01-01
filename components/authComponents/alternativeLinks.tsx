@@ -18,8 +18,8 @@ const AltLinks: FC<ILink> = ({ links }) => {
       justifyContent={"space-between"}
       alignItems={"center"}
     >
-      {links.map((item) => (
-        <Link href={item.href}>
+      {links.map((item, i) => (
+        <Link key={i} href={item.href}>
           <p className="text-white text-sm">{item.text}</p>
         </Link>
       ))}
