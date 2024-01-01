@@ -9,7 +9,7 @@ interface ModalI {
 
 const Modal: FC<ModalI> = ({ name, toggle }) => {
   return (
-    <div className="bg-white flex-col w-[60vw] min-h-[80vh] rounded-lg px-4 py-4 flex">
+    <div className="bg-white flex-col w-[90vw] md:w-[60vw] min-h-[80vh] rounded-lg px-4 py-4 flex">
       <Typography
         sx={{ fontWeight: "bold", fontSize: { md: "2rem", xs: "1.5rem" } }}
       >

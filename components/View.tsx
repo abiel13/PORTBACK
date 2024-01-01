@@ -9,7 +9,7 @@ interface ViewI {
 const View: FC<ViewI> = ({ name, toggle }) => {
   return (
     <div className="flex flex-col  items-center gap-4">
-      <div className="w-[60vw] h-[50vh] rounded-xl bg-white py-4 px-3">
+      <div className="w-[90vw] md:[60vw] h-[80vh] mt-[1rem] md:mt-0 rounded-xl bg-white py-4 px-3">
         <Stack spacing={2} sx={{ height: "100%" }}>
           <Typography
             sx={{
