@@ -12,8 +12,8 @@ const Navbar = () => {
     <div className="px-4 py-2 bg-[#449F24] min-h-[10vh] flex flex-col gap-4">
       <h1 className="font-bold text-3xl text-white">PortBack</h1>
       <div className="flex gap-[1.3rem] items-center overflow-x-auto hidden-scroll">
-        {navRoutes.map((item) => (
-          <Navitem item={item} />
+        {navRoutes.map((item, i) => (
+          <Navitem key={i} item={item} />
         ))}
       </div>
     </div>

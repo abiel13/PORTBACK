@@ -3,7 +3,7 @@ import React from "react";
 import { Grid, Stack } from "@mui/material";
 import Fields from "./Fields";
 import { useFormik } from "formik";
-import { loginSchema } from "@/app/(auth)/verifications";
+import { signupSchema } from "@/app/(auth)/verifications";
 import CtaButton from "./CtaButton";
 import AltLinks, { Links } from "./alternativeLinks";
 
@@ -21,11 +21,14 @@ const SignupForm = () => {
 
   const { values, errors, handleChange, handleSubmit } = useFormik({
     initialValues: {
+      first_name: "",
       email: "",
       password: "",
+      last_name: "",
+      confirm_password: "",
     },
     onSubmit,
-    validationSchema: loginSchema,
+    validationSchema: signupSchema,
   });
 
   return (
@@ -37,27 +40,30 @@ const SignupForm = () => {
       }}
       spacing={3}
     >
-      <Grid sx={{ gap: "1rem", width: "100%" , justifyContent:'space-between' }} container>
+      <Grid
+        sx={{ gap: "1rem", width: "100%", justifyContent: "space-between" }}
+        container
+      >
         <Grid item xs={12} md={5.6}>
           <Fields
             title="first name"
-            value={values.email}
-            placeholder="first name"
+            value={values.first_name}
+            placeholder="first_name"
             onChange={handleChange}
-            name="email"
-            type="email"
-            errorlock={errors.email!}
+            name="first_name"
+            type="text"
+            errorlock={errors.first_name!}
           />
         </Grid>
         <Grid item xs={12} md={5.6}>
           <Fields
             title="last name"
-            value={values.email}
-            placeholder="last name"
+            value={values.last_name}
+            placeholder="last_name"
             onChange={handleChange}
-            name="email"
-            type="email"
-            errorlock={errors.email!}
+            name="last_name"
+            type="text"
+            errorlock={errors.last_name!}
           />
         </Grid>
         <Grid item xs={12} md={5.6}>
@@ -74,23 +80,23 @@ const SignupForm = () => {
         <Grid item xs={12} md={5.6}>
           <Fields
             title="passowrd"
-            value={values.email}
+            value={values.password}
             placeholder="password"
             onChange={handleChange}
-            name="email"
+            name="password"
             type="password"
-            errorlock={errors.email!}
+            errorlock={errors.password!}
           />
         </Grid>
-        <Grid item xs={12} >
+        <Grid item xs={12}>
           <Fields
             title="confirm paswword"
-            value={values.email}
+            value={values.confirm_password}
             placeholder="confirm password"
             onChange={handleChange}
-            name="email"
+            name="confirm_password"
             type="password"
-            errorlock={errors.email!}
+            errorlock={errors.confirm_password!}
           />
         </Grid>
       </Grid>
