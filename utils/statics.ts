@@ -47,8 +47,8 @@ export const portFeaturesData: TportFeature[] = [
     code: `
     const portBackURL = 'paste-your-copied-url-here';
      // Paste the URL you copied from PortBack
-    fetch(\`\${portBackURL}/api/
-    v1/skills\`)
+    fetch(\`\${portBackURL}/api
+    /v1/skills\`)
       .then(response => response.json())
       .then(data => {
         // Handle the data as needed in your application
@@ -66,8 +66,8 @@ export const portFeaturesData: TportFeature[] = [
     code: `
     const portBackURL = 'paste-your-copied-url-here'; 
     // Paste the URL you copied from PortBack
-    fetch(\`\${portBackURL}/api/
-    v1/testimonials\`)
+    fetch(\`\${portBackURL}/api
+    /v1/testimonials\`)
       .then(response => response.json())
       .then(data => {
         // Handle the data as needed in your application
@@ -85,8 +85,8 @@ export const portFeaturesData: TportFeature[] = [
     code: `
     const portBackURL = 'paste-your-copied-url-here'; 
     // Paste the URL you copied from PortBack
-    fetch(\`\${portBackURL}/api/
-    v1/projects\`)
+    fetch(\`\${portBackURL}/api
+    /v1/projects\`)
       .then(response => response.json())
       .then(data => {
         // Handle the data as needed in your application
@@ -104,8 +104,8 @@ export const portFeaturesData: TportFeature[] = [
     code: `
     const portBackURL = 'paste-your-copied-url-here'; 
     // Paste the URL you copied from PortBack
-    fetch(\`\${portBackURL}/api/
-    v1/experiences\`)
+    fetch(\`\${portBackURL}/api
+    /v1/experiences\`)
       .then(response => response.json())
       .then(data => {
         // Handle the data as needed in your application
@@ -123,8 +123,8 @@ export const portFeaturesData: TportFeature[] = [
     code: `
     const portBackURL = 'paste-your-copied-url-here'; 
     // Paste the URL you copied from PortBack
-    fetch(\`\${portBackURL}/api/
-    v1/projects/[id]\`)
+    fetch(\`\${portBackURL}/api
+    /v1/projects/[id]\`)
       .then(response => response.json())
       .then(data => {
         // Handle the data as needed in your application
@@ -142,8 +142,8 @@ export const portFeaturesData: TportFeature[] = [
     code: `
     const portBackURL = 'paste-your-copied-url-here';
      // Paste the URL you copied from PortBack
-    fetch(\`\${portBackURL}/api/
-    v1/experiences/[id]\`)
+    fetch(\`\${portBackURL}/api
+    /v1/experiences/[id]\`)
       .then(response => response.json())
       .then(data => {
         // Handle the data as needed in your application
